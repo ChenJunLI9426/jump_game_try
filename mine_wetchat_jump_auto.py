@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import math
 from PIL import Image
-from common import debug,config
+from common import debug,config,screenshot
 
 #检测手机是否通过adb正常连接，正常连接后识别设备，设置相应参数
 configs = config.para()
@@ -43,7 +43,7 @@ def main():
     # #显示设备信息(要补充)
     debug.find_service_inf()
     # #检查设备截图方式
-    # screenshot.checkshot()
+    screenshot.check_screenshot()
     #
     # prime = set_for("{},{}/{},[{}]").format(op,"y","n","y?")
     #
